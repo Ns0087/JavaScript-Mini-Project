@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus-visible {
+    outline: 0;
+}
+
+.main {
+    background-color: #3498db;
+    background-image: url("backgroundPasswordImage.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 100%;
+    color: #ffffff;
+}
+
+.box {
+    width: 400px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+    background: #2980b9;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+#pass-box {
+    width: 100%;
+    display: block;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+label {
+    user-select: none;
+}
+
+#btn {
+    width: 100%;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    background-color: #34495e;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: #1b2530;
+    box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.267);
+
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 85%;
+        color: #ffffff;
+
+    }
+
+    .box {
+        width: 330px;
+    }
+
+    #pass-box {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .heading {
+        font-size: 65%;
+        color: #ffffff;
+
+    }
+
+    .box {
+        width: 230px;
+    }
+
+    #pass-box {
+        font-size: 18px;
+    }
+}
