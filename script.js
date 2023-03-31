@@ -37,10 +37,6 @@ const generatePassword = (password = "") => {
     }
 
     pass.innerText = truncateString(password, totalChar.value);
-    // Randomise(pass.innerText)
-    
-    let finalPassword = shuffleString(pass.innerText);
-    console.log(finalPassword);
 }
 
 //onclick Event in Generate Password button
