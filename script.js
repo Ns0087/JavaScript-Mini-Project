@@ -39,7 +39,7 @@ const generatePassword = (password = "") => {
     pass.innerText = truncateString(password, totalChar.value);
 }
 
-//onclick Event in Generate Password button
+//onclick Event on Generate Password button
 document.getElementById("btn").addEventListener(
     "click",
     function () {
