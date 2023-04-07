@@ -3,9 +3,30 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ns0087&label=Profile%20views&color=0e75b6&style=flat" alt="ns0087" /> </p>
 
-- 🔭 I’m currently working on [Random Password Generator](https://github.com/Ns0087/JavaScript-Mini-Project)
+<h4>Random Password Generator</h4>
+<p>This is a mini project that generates a random password using JavaScript.</p>
 
-- 🔭 Host Link [Random Password Generator](https://password-generator-byzombies.netlify.app/)
+<h2>Features</h2>
+- Generates a random password based on user input
+- Allows the user to select the length of the password
+- Allows the user to include or exclude uppercase letters, lowercase letters, numbers, and special characters
+
+<h2>Usage</h2>
+To use the random password generator, follow these steps:
+
+1. Clone the repository or download the files to your local machine.
+2. Open the index.html file in your web browser.
+3. Enter the desired length of your password in the input field.
+4. Check or uncheck the boxes to include or exclude uppercase letters, lowercase letters, numbers, and special characters.
+5. Click the "Generate Password" button.
+6. The password will be displayed on the screen.
+7. You can click the "Copy Icon" button to copy the password to your clipboard.
+
+<h2>Screenshots</h2>
+Screenshot 1
+
+<h2>Contributing</h2>
+Contributions to this project are welcome. If you find a bug or have a feature request, please open an issue.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
