@@ -7,9 +7,11 @@
 <p>This is a mini project that generates a random password using JavaScript.</p>
 
 <h2>Features</h2>
-- Generates a random password based on user input
-- Allows the user to select the length of the password
-- Allows the user to include or exclude uppercase letters, lowercase letters, numbers, and special characters
+<ul>
+<li>Generates a random password based on user input</li>
+<li>Allows the user to select the length of the password</li>
+<li>Allows the user to include or exclude uppercase letters, lowercase letters, numbers, and special characters</li>
+</ul>
 
 <h2>Host Link</h2>
 https://password-generator-byzombies.netlify.app/
