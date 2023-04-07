@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ns0087&label=Profile%20views&color=0e75b6&style=flat" alt="ns0087" /> </p>
 
-<h4>Random Password Generator</h4>
+<h2>Random Password Generator</h2>
 <p>This is a mini project that generates a random password using JavaScript.</p>
 
 <h2>Features</h2>
