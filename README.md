@@ -26,7 +26,7 @@ To use the random password generator, follow these steps:
 7. You can click the "Copy Icon" button to copy the password to your clipboard.
 
 <h2>Screenshots</h2>
-Screenshot 1
+<img src="Password Generator Screenshot.png" alt="screenshot" width="500px" height="auto">
 
 <h2>Contributing</h2>
 Contributions to this project are welcome. If you find a bug or have a feature request, please open an issue.
