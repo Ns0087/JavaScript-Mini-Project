@@ -11,6 +11,9 @@
 - Allows the user to select the length of the password
 - Allows the user to include or exclude uppercase letters, lowercase letters, numbers, and special characters
 
+<h2>Host Link</h2>
+https://password-generator-byzombies.netlify.app/
+
 <h2>Usage</h2>
 To use the random password generator, follow these steps:
 
