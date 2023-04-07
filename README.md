@@ -1,5 +1,5 @@
 # JavaScript-Mini-Project
 Random Password Generator
 
-#HostLink
+##HostLink
 https://password-generator-byzombies.netlify.app/
