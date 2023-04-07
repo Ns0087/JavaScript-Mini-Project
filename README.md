@@ -5,6 +5,8 @@
 
 - 🔭 I’m currently working on [Random Password Generator](https://github.com/Ns0087/JavaScript-Mini-Project)
 
+- 🔭 Host Link [Random Password Generator](https://password-generator-byzombies.netlify.app/)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/nitin-saraswat-3980b9213" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="nitin-saraswat-3980b9213" height="30" width="40" /></a>
