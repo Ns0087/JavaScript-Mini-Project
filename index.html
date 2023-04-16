@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-    <link rel="icon" href="passwordGenerator.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
 
-<body>
-    <div class="main">
-        <div class="logo">
-            <img src="passwordGenerator.png" alt="logo" width="100px" height="100px" style="border-radius : 50%">
-        </div>
-        <div class="heading">
-            <h1>Password Generator</h1>
-        </div>
-        <div class="box">
-            <span id="pass-box">
-                <span id="pass">
-                    Password
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="icon" href="passwordGenerator.png">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="logo">
+                <img src="passwordGenerator.png" alt="logo" width="100px" height="100px" style="border-radius : 50%">
+            </div>
+            <div class="heading">
+                <h1>Password Generator</h1>
+            </div>
+            <div class="box">
+                <span id="pass-box">
+                    <span id="pass">
+                        Password
+                    </span>
+                    <button id="copyBtn" onclick="copyText()">
+                        <i class="fa-regular fa-copy fa-lg"></i>
+                    </button>
                 </span>
-                <button id="copyBtn" onclick="copyText()">
-                    <i class="fa-regular fa-copy fa-lg"></i>
-                </button>
-            </span>
 
-            <div class="row">
-                <div class="left">
-                    Password Length
-                </div>
-                <div class="right">
-                    <input type="number" id="total-char" max="30" min="2" value="10" />
-                </div>
-            </div>
-            <div class="row">
-                <label for="upper-case">
+                <div class="row">
                     <div class="left">
-                        Contains Uppercase
+                        Password Length
                     </div>
-                </label>
-                <div class="right">
-                    <input type="checkbox" id="upper-case" checked />
-                </div>
-            </div>
-            <div class="row">
-                <label for="lower-case">
-                    <div class="left">
-                        Contains Lowercase
+                    <div class="right">
+                        <input type="number" id="total-char" max="30" min="2" value="10" />
                     </div>
-                </label>
-                <div class="right">
-                    <input type="checkbox" id="lower-case" />
                 </div>
-            </div>
-            <div class="row">
-                <label for="numbers">
-                    <div class="left">
-                        Contains Numbers
+                <div class="row">
+                    <label for="upper-case">
+                        <div class="left">
+                            Contains Uppercase
+                        </div>
+                    </label>
+                    <div class="right">
+                        <input type="checkbox" id="upper-case" checked />
                     </div>
-                </label>
-                <div class="right">
-                    <input type="checkbox" id="numbers" />
                 </div>
-            </div>
-            <div class="row">
-                <label for="symbols">
-                    <div class="left">
-                        Contains Symbols
+                <div class="row">
+                    <label for="lower-case">
+                        <div class="left">
+                            Contains Lowercase
+                        </div>
+                    </label>
+                    <div class="right">
+                        <input type="checkbox" id="lower-case" />
                     </div>
-                </label>
-                <div class="right">
-                    <input type="checkbox" id="symbols" />
                 </div>
-            </div>
-            <div class="row">
-                <button id="btn">
-                    Generate
-                </button>
+                <div class="row">
+                    <label for="numbers">
+                        <div class="left">
+                            Contains Numbers
+                        </div>
+                    </label>
+                    <div class="right">
+                        <input type="checkbox" id="numbers" />
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="symbols">
+                        <div class="left">
+                            Contains Symbols
+                        </div>
+                    </label>
+                    <div class="right">
+                        <input type="checkbox" id="symbols" />
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="btn">
+                        Generate
+                    </button>
+                </div>
+                <div class="row">
+                    <p id="strength"></p>
+                    <input id="strengthRange" type="range" max="12" min="0" value="0" disabled>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 
 </html>

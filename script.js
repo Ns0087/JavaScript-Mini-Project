@@ -37,13 +37,16 @@ const generatePassword = (password = "") => {
     }
 
     pass.innerText = truncateString(password, totalChar.value);
+
+    return pass.innerText;
 }
 
 //onclick Event on Generate Password button
 document.getElementById("btn").addEventListener(
     "click",
     function () {
-        generatePassword();
+        let password = generatePassword();
+        passwordStrength(password);
     }
 
 )
@@ -87,4 +90,96 @@ function copyText() {
             console.error(`Error copying text: ${error}`);
             alert('Error copying password!!');
         });
+}
+
+//Test Password Strength
+function checkPasswordStrength(password) {
+    let strength = 0;
+    // Check if password length is at least 8 characters long and no more than 32 characters long
+    if (password.length < 8 || password.length > 32) {
+        strength -= 4;
+    }
+    
+    // Check if password contains common words
+    const commonWords = ["password", "123456", "qwerty"];
+    if (!(commonWords.includes(password))) {
+        strength += 1;
+    }
+    
+    // Check if password contains dictionary words
+    const dictionary = ["apple", "banana", "orange"];
+    if (!(dictionary.includes(password.toLowerCase()))) {
+        strength += 1;
+    }
+    
+    // Check if password contains similar characters
+    const similarChars = /[o0l1]/g;
+    if (!(password.match(similarChars))) {
+        strength += 1;
+    }
+    
+    // Check if password contains repeated characters
+    const repeatedChars = /(.)\1{2,}/g;
+    if (!(password.match(repeatedChars))) {
+        strength += 1;
+    }
+    
+    // Check if password contains sequential characters
+    const sequentialChars = /(abc|bcd|cde|123|234|345)/g;
+    if (!(password.match(sequentialChars))) {
+        strength += 1;
+    }
+    
+    // Check if password contains personal information
+    const userInfo = ["john", "doe", "555-1234", "january"];
+    let status = 0;
+    for (let info of userInfo) {
+      if (password.toLowerCase().includes(info)) {
+        status++;
+      }
+    }
+
+    if(status == 0){
+        strength++;
+    }
+    
+    // Check if password has been used before
+    const previousPasswords = ["password123", "letmein"];
+    if (!(previousPasswords.includes(password))) {
+        strength += 1;
+    }
+
+    if (password.match(/[a-z]/)) {
+        strength += 1;
+    }
+    if (password.match(/[A-Z]/)) {
+        strength += 1;
+    }
+    if (password.match(/[0-9]/)) {
+        strength += 1;
+    }
+    if (password.match(/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/)) {
+        strength += 1;
+    }
+
+    // Password is considered strong if it passes all checks
+    return strength;
+  }
+  
+function passwordStrength(password) {
+    let strength = checkPasswordStrength(password);
+    let strengthText = document.getElementById('strength');
+    let strengthRange = document.getElementById('strengthRange');
+
+    if(strength <= 6) { strengthText.innerText = "Weak"; strengthRange.value = strength; }
+    if(strength > 6 && strength <= 9) { strengthText.innerText = "Medium"; strengthRange.value = strength;}
+    if(strength > 9) { strengthText.innerText = "Strong"; strengthRange.value = strength;}
+
+    changeColor(strength);
+}
+
+function changeColor(value) {
+    var slider = document.getElementById("strengthRange");
+    var value = slider.value;
+    slider.style.background = 'linear-gradient(to right, green, yellow, red ' + value*10 + '%)';
 }
